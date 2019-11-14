@@ -1,9 +1,9 @@
-import { Router } from "express";
+import { Router } from 'express';
+
+import BookController from './app/controllers/BookController';
 
 const routes = new Router();
 
-routes.get("/books", (req, res) => {
-    res.json([{ id: 1, name: "Default Book" }]);
-});
+routes.get('/books', BookController.index);
 
 export default routes;
