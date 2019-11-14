@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "mocha",
+        "test:integration": "mocha --opts test/integration/mocha.opts test/integration/*.test.js",
         "dev": "nodemon -w src --exec \"babel-node src --presets env\"",
-        "build": "babel src -s -D -d dist --presets env",
+        "build": "babel src/index.js -s -D -d dist --presets env",
         "start": "node dist"
     },
     "keywords": [],
