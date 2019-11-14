@@ -1,6 +1,7 @@
 import './bootstrap';
 
 import express from 'express';
+
 import routes from './routes';
 
 import './database';
@@ -23,8 +24,8 @@ class App {
   }
 
   exceptionHandler() {
-    this.server.use(async err => {
-      console.error('Err', err);
+    this.server.use((err, req, res, next) => {
+      next(err);
     });
   }
 }
