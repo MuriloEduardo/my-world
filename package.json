@@ -1,0 +1,27 @@
+{
+    "name": "my-world",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "mocha",
+        "dev": "nodemon -w src --exec \"babel-node src --presets env\"",
+        "build": "babel src -s -D -d dist --presets env",
+        "start": "node dist"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "chai": "^4.2.0",
+        "eslint": "^6.6.0",
+        "mocha": "^6.2.2",
+        "nodemon": "^1.19.4",
+        "supertest": "^4.0.2"
+    }
+}
