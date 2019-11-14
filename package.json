@@ -1,7 +1,7 @@
 {
     "name": "my-world",
     "version": "1.0.0",
-    "description": " This is my world crazy 🌍",
+    "description": "This is my world crazy 🌍",
     "main": "index.js",
     "scripts": {
         "test:integration": "mocha test/integration/*.test.js --require @babel/register",
